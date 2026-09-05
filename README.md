@@ -81,8 +81,7 @@ Everything runs in `asia-south1` (Mumbai) for latency.
 ├── requirements.txt
 ├── .env.example                         # Local dev template (no real values)
 ├── DEPLOY.md                            # Exact gcloud commands used to deploy
-├── PHASE1_AI_STUDIO_INSTRUCTIONS.md     # The security directives pasted into AI Studio
-└── SOCIAL_POST.md                       # #AccelerateAIwithCloudRun post drafts
+└── PHASE1_AI_STUDIO_INSTRUCTIONS.md     # The security directives pasted into AI Studio
 ```
 
 ## Local development
