@@ -1,0 +1,19 @@
+rules_version = '2';
+
+// Personal Gemini Journal — per-user data isolation.
+// A user can only read or write documents nested under their own uid.
+// All other paths are denied by default.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /users/{userId}/{document=**} {
+      allow read, write: if request.auth != null
+                         && request.auth.uid == userId;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

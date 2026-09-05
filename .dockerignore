@@ -1,0 +1,17 @@
+.git
+.gitignore
+__pycache__
+*.pyc
+*.pyo
+.env
+.env.*
+.venv
+venv/
+.vscode
+.idea
+*.log
+.DS_Store
+serviceAccountKey.json
+DEPLOY.md
+SOCIAL_POST.md
+PHASE1_AI_STUDIO_INSTRUCTIONS.md
